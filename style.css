@@ -5,18 +5,18 @@
   font-family: Lato, sans-serif;
 }
 
-.intro-content {
+.intro {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.intro-content-img {
+.intro__image {
   width: 100%;
 }
 
-.intro-content .more-info {
+.intro__detail {
   font-family: fantasy, cursive;
 }
 
@@ -26,23 +26,17 @@
   }
 }
 
-.main-content {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1;
-}
-
-.task-row-wrapper {
+.wrapper {
   display: flex;
 }
 
-.task-container {
+.container {
   margin: 0;
   padding: 0;
 }
@@ -73,7 +67,10 @@
   text-transform: uppercase;
 }
 
-.task-input {
+.input {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -87,22 +84,18 @@
   color: #888;
 }
 
-.task-input:focus {
+.input:focus {
   color: #333;
 }
 
 /* New Task */
-.add-label {
+.add-section__title {
   display: block;
   margin: 0 0 20px;
 }
 
-.add-input {
-  width: 318px;
-}
-
 /* Task list */
-.task-item {
+.item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -112,48 +105,45 @@
   list-style: none;
 }
 
-.task-item > * {
+.item > * {
   vertical-align: middle;
 }
 
-.task-item-checkbox {
+.item__checkbox {
   margin: 0 10px;
   outline: none;
 }
 
-.task-item-label {
+.item__label {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  width: 226px;
 }
 
-.task-item-input {
-  width: 226px;
-}
-
-.delete-icon {
+.button__delete-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete-icon:hover {
+.button__delete-icon:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.task-item-completed {
+.item__label_completed {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.hidden {
+.input_hidden {
   display: none;
 }
 
-.task-item-edit {
-  display: inline-block;
-  width: 224px;
+.item__label_hidden {
+  display: none;
 }
