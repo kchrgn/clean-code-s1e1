@@ -12,7 +12,7 @@
   text-align: right;
 }
 
-.intro__image {
+.intro__overview {
   width: 100%;
 }
 
@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 768px) {
-  .intro-content {
+  .intro__detail {
     text-align: center;
   }
 }
@@ -95,7 +95,7 @@
 }
 
 /* Task list */
-.item {
+.task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -105,16 +105,16 @@
   list-style: none;
 }
 
-.item > * {
+.task > * {
   vertical-align: middle;
 }
 
-.item__checkbox {
+.task__checkbox {
   margin: 0 10px;
   outline: none;
 }
 
-.item__label {
+.task__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -134,7 +134,7 @@
 }
 
 /* Completed */
-.item__label_completed {
+.task__label_completed {
   text-decoration: line-through;
   color: #888;
 }
@@ -144,6 +144,6 @@
   display: none;
 }
 
-.item__label_hidden {
+.task__label_hidden {
   display: none;
 }

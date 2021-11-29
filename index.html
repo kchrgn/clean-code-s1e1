@@ -7,7 +7,7 @@
   </head>
   <body class="page">
     <header class="intro">
-      <img class="intro__image" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix">
+      <img class="intro__overview" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix">
       <a class="intro__detail" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="main">
@@ -21,18 +21,18 @@
       <section>
         <h3 class="title">Todo</h3>
         <ul class="container" id="incomplete-tasks">
-          <li class="item">
-            <input class="item__checkbox" type="checkbox">
-            <label class="item__label">Pay Bills</label>
+          <li class="task">
+            <input class="task__checkbox" type="checkbox">
+            <label class="task__label">Pay Bills</label>
             <input class="input input_hidden" type="text">
             <button class="button button_type_edit">Edit</button>
             <button class="button button_type_delete">
               <img class="button__delete-icon" src="./remove.svg" alt="Delete button">
             </button>
           </li>
-          <li class="item item_mode_edit">
-            <input class="item__checkbox" type="checkbox">
-            <label class="item__label item__label_hidden">Go Shopping</label>
+          <li class="task task_mode_edit">
+            <input class="task__checkbox" type="checkbox">
+            <label class="task__label task__label_hidden">Go Shopping</label>
             <input class="input" type="text" value="Go Shopping">
             <button class="button button_type_edit">Save</button>
             <button class="button button_type_delete">
@@ -44,10 +44,10 @@
       <section>
         <h3 class="title">Completed</h3>
         <ul class="container" id="completed-tasks">
-          <li class="item">
-            <input class="item__checkbox" type="checkbox" checked>
-            <label class="item__label item__label_completed">See the Doctor</label>
-            <input class="input input_hidden"type="text">
+          <li class="task">
+            <input class="task__checkbox" type="checkbox" checked>
+            <label class="task__label task__label_completed">See the Doctor</label>
+            <input class="input input_hidden" type="text">
             <button class="button button_type_edit">Edit</button>
             <button class="button button_type_delete">
               <img class="button__delete-icon" src="./remove.svg" alt="Delete button">
